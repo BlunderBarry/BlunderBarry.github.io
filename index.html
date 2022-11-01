@@ -2,58 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="preview-card.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Fraunces"
-    />
-  </head>
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Overpass"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="rating.css" />
+  </head>
   <body>
-    <div id="flex">
-      <div id="grid">
-        <div id="img-cont">
+    <div id="fPage">
+      <div class="container">
+        <div class="img-cont">
+          <img src="images/icon-star.svg" aria-hidden="true" alt="" />
+        </div>
+
+        <h1>How did we do?</h1>
+        <p id="p-first">
+          Please let us know how we did with your <br class="br-mobile" />
+          support request. All feedback is appreciated <br class="br-mobile" />
+          to help us improve our offering!
+        </p>
+        <div id="number-cont">
+          <button class="numbers">1</button>
+          <button class="numbers">2</button>
+          <button class="numbers">3</button>
+          <button class="numbers">4</button>
+          <button class="numbers">5</button>
+        </div>
+        <div class="btn-cont">
+          <button class="btn" id="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div id="sPage">
+      <div class="container container-second">
+        <div class="cont-img-ty">
           <img
-            src="images/image-product-desktop.jpg"
-            srcset="
-              images/image-product-desktop.jpg 1440w,
-              images/image-product-mobile.jpg   375w
-            "
-            sizes="(min-width:600px)1440px,
-          (max-width:599px) 375px"
-            id="main-image"
+            id="img-thank-you"
+            src="images/illustration-thank-you.svg"
+            alt=""
           />
         </div>
-        <section id="text">
-          <h2>P E R F U M E</h2>
-          <h1>
-            Gabrielle <br class="br-desktop" />
-            Essence <br class="br-mobile" />
-            Eau <br class="br-desktop" />
-            De Parfum
-          </h1>
-          <p>
-            A floral, solar and voluptuous <br />
-            interpretation composed by <br class="br-desktop" />
-            Olivier <br class="br-mobile" />
-            Polge, Perfumer-Creator <br class="br-desktop" />
-            for the House of <br class="br-mobile" />
-            CHANEL.
-          </p>
-          <div id="prices">$149.99 <strike>$169.99</strike></div>
-          <button>
-            <img src="images/icon-cart.svg" />
-            Add to cart
-          </button>
-        </section>
+
+        <div id="selected"><span id="rating"></span></div>
+        <h2 id="thank-you">Thank you!</h2>
+        <p id="rating-p">
+          We appreciate you taking the time to give a
+          <br class="br-mobile" />rating. If you ever need more support, don’t
+          <br class="br-mobile" />
+          hesitate to get in touch!
+        </p>
       </div>
     </div>
   </body>
+  <script src="rating.js"></script>
 </html>
